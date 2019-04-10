@@ -14,13 +14,13 @@ public class User
 
     public User()
     {
-        this.gpa = gpa;
-        this.actScore = actScore;
-        this.ethnicity = ethnicity;
-        this.state = state;
-        this.country = country;
-        this.gender = gender;
-        this.age = age;
+        gpa = 0.00;
+        actScore = 0;
+        ethnicity = "";
+        state = "";
+        country = "";
+        gender = "";
+        age = 0;
 
 
     }
@@ -29,15 +29,19 @@ public class User
 
 public User(double gpa, int actScore, String ethnicity, String state, String country, String gender, int age)
 {
-    gpa = 0.00;
-    actScore = 0;
-    ethnicity = "";
-    state = "";
-    country = "";
-    gender = "";
-    age = 0;
+    this.gpa = gpa;
+    this.actScore = actScore;
+    this.ethnicity = ethnicity;
+    this.state = state;
+    this.country = country;
+    this.gender = gender;
+    this.age = age;
 }
     //methods
+
+
+
+
 
     //getters
     public double getGpa()
