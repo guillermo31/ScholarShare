@@ -68,4 +68,33 @@ public User(double gpa, int actScore, String ethnicity, String state, String cou
     public String getState() {
         return state;
     }
+
+    //setters
+    public void setActScore(int actScore) {
+        this.actScore = actScore;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setEthnicity(String ethnicity) {
+        this.ethnicity = ethnicity;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 }
