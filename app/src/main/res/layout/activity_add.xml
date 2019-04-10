@@ -62,7 +62,6 @@
         android:layout_marginRight="33dp"
         android:layout_marginBottom="16dp"
         android:text="Requirements"
-        android:textColor="android:color/black"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
