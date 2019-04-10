@@ -1,9 +1,9 @@
 package com.ctecgang.scholarshare;
 
 public class Scholarship {
-    private String ACT;
+    private int ACT;
     private String Gender;
-    private String GPA;
+    private double GPA;
     private String Ethnicity;
     private String State;
     protected Scholarship()
