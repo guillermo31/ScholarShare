@@ -60,6 +60,7 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
         stateSpinner.setOnItemSelectedListener(this);
 
         final EditText name = findViewById(R.id.editText2);
+        final EditText link = findViewById(R.id.editText);
 
 
 
