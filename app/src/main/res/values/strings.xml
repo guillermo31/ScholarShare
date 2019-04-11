@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">ScholarShare</string>
     <string name="post">Post</string>
+    <string name="requirements">Requirements</string>
+    <string name="act">ACT</string>
+    <string name="gpa">GPA</string>
+    <string name="gender">Gender</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="state">State</string>
+    <string name="specifications">Specifications</string>
+    <string name="enter">Enter the specifications</string>
+
+    <string-array name="ACTScores">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+
+
+
 </resources>
