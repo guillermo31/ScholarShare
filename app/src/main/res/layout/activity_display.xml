@@ -15,7 +15,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif-black"
         android:text="Scholarship"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,6 +31,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif"
         android:text="These are the requirements for the Scholarship"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,9 +61,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif"
         android:text="New Scholarship"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
 </android.support.constraint.ConstraintLayout>

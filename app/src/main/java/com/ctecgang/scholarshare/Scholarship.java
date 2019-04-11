@@ -7,6 +7,8 @@ public class Scholarship {
     private String gpa;
     private String ethnicity;
     private String state;
+    private String link;
+
     protected Scholarship()
     {
         this.name = "the best scholar";
@@ -15,6 +17,7 @@ public class Scholarship {
         this.gpa = "4.0";
         this.ethnicity = "prefer not to answer";
         this.state = "California";
+        this.link = "www.google.com";
     }
 
     protected Scholarship(String name, String act, String gender, String gpa, String ethnicity, String state)
