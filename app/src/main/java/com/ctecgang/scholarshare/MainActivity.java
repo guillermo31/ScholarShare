@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        filterButton.setOnClickListener(new View.OnClickListener(){
+        filterButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v)
             {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity
     }
     public void openFilterScreen()
     {
-        Intent intent = new Intent(this, add.class);
+        Intent intent = new Intent(this, activity_user_input.class);
         startActivity(intent);
     }
 
