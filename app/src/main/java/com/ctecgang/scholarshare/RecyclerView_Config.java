@@ -28,6 +28,7 @@ public class RecyclerView_Config
         public void bind(Scholarship scholarship, String key)
         {
             mTitle.setText(scholarship.getName());
+            m
         }
 
     }

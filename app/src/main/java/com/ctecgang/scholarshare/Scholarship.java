@@ -20,7 +20,7 @@ public class Scholarship {
         this.link = "www.google.com";
     }
 
-    protected Scholarship(String name, String act, String gender, String gpa, String ethnicity, String state)
+    protected Scholarship(String name, String act, String gender, String gpa, String ethnicity, String state, String link)
     {
         this.name = name;
         this.act = act;
@@ -28,6 +28,7 @@ public class Scholarship {
         this.gpa = gpa;
         this.ethnicity = ethnicity;
         this.state = state;
+        this.link = link;
 
     }
 
@@ -56,4 +57,7 @@ public class Scholarship {
         return state;
     }
 
+    public String getLink() {
+        return link;
+    }
 }
