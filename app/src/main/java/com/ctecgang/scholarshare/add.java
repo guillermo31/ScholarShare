@@ -15,6 +15,9 @@ public class add extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        // creating the new object with text field's data
+//        private Scholarship newScholarship = new Scholarship()
+
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
