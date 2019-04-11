@@ -60,6 +60,7 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
         stateSpinner.setOnItemSelectedListener(this);
 
         final EditText name = findViewById(R.id.editText2);
+        final EditText link = findViewById(R.id.editText);
 
 
 
@@ -79,8 +80,9 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
                 String gender = genderSpinner.getSelectedItem().toString();
                 String state = stateSpinner.getSelectedItem().toString();
                 String nameField = name.getText().toString();
+                String linkField = link.getText().toString();
 
-                newScholarship = new Scholarship(nameField, actScore, gender, gpa, ethnicity, state);
+                newScholarship = new Scholarship(nameField, actScore, gender, gpa, ethnicity, state, linkField);
 
                 mDatabase.child("scholarships").child(newScholarship.getName()).setValue(newScholarship);
 

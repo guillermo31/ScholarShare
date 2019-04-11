@@ -19,7 +19,7 @@ public class User
         this.state = "Utah";
 
     }
-    public User(String name, String act, String gender, String gpa, String ethnicity, String state)
+    public User(String act, String gender, String gpa, String ethnicity, String state)
     {
         this.name = name;
         this.act = act;
