@@ -26,13 +26,32 @@ public class activity_user_input extends AppCompatActivity {
 
     }
 
-    protected void readScholarships()
+    public interface DataStatus
+    {
+        void dataIsLoaded(ArrayList<Scholarship> scholarships, ArrayList<String> keys);
+        void dataIsInserted();
+        void dataIsUpdated();
+        void dataIsDeleted();
+
+    }
+
+
+    protected void readScholarships(final DataStatus dataStatus)
     {
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                ArrayList<String> keys = new ArrayList<String>();
+
+                for(DataSnapshot keyNode : dataSnapshot.getChildren())
+                {
+                    keys.add(keyNode.getKey());
+                    Scholarship currentScholarship = keyNode.getValue(Scholarship.class);
+                    scholarships.add(currentScholarship);
+                }
+                dataStatus.dataIsLoaded(scholarships, keys);
 
             }
 
