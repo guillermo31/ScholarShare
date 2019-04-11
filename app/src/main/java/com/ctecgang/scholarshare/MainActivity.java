@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        filterButton.setOnClickListener(new View.OnClickListener(){
+        filterButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v)
             {
