@@ -28,15 +28,36 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
         setContentView(R.layout.activity_add);
 
         Spinner actSpinner = findViewById(R.id.ACTspinner);
-        Spinner gpaSpinner = findViewById(R.id.GPASpinner);
         ArrayAdapter<CharSequence> actAdapter = ArrayAdapter.createFromResource(this, R.array.ACTScores, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> gpaAdapter = ArrayAdapter.createFromResource(this, R.array.GPAList, android.R.layout.simple_spinner_item);
         actAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        gpaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         actSpinner.setAdapter(actAdapter);
-        gpaSpinner.setAdapter(gpaAdapter);
         actSpinner.setOnItemSelectedListener(this);
+
+        Spinner gpaSpinner = findViewById(R.id.GPASpinner);
+        ArrayAdapter<CharSequence> gpaAdapter = ArrayAdapter.createFromResource(this, R.array.GPAList, android.R.layout.simple_spinner_item);
+        gpaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        gpaSpinner.setAdapter(gpaAdapter);
         gpaSpinner.setOnItemSelectedListener(this);
+
+        Spinner ethnicitySpinner = findViewById(R.id.EthnicitySpinner);
+        ArrayAdapter<CharSequence> ethnicityAdapter = ArrayAdapter.createFromResource(this, R.array.ethnicityList, android.R.layout.simple_spinner_item);
+        ethnicityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ethnicitySpinner.setAdapter(ethnicityAdapter);
+        ethnicitySpinner.setOnItemSelectedListener(this);
+
+        Spinner genderSpinner = findViewById(R.id.GenderSpinner);
+        ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(this, R.array.genderList, android.R.layout.simple_spinner_item);
+        genderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        genderSpinner.setAdapter(genderAdapter);
+        genderSpinner.setOnItemSelectedListener(this);
+
+        Spinner stateSpinner = findViewById(R.id.StateSpinner);
+        ArrayAdapter<CharSequence> stateAdapter = ArrayAdapter.createFromResource(this, R.array.stateList, android.R.layout.simple_spinner_item);
+        stateAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        stateSpinner.setAdapter(stateAdapter);
+        stateSpinner.setOnItemSelectedListener(this);
+
+
 
         // creating the new object with text field's data
 
