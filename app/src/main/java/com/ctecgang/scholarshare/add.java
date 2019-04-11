@@ -39,14 +39,14 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
         gpaSpinner.setAdapter(gpaAdapter);
         gpaSpinner.setOnItemSelectedListener(this);
 
-        Spinner ethnicitySpinner = findViewById(R.id.EthnicitySpinner);
-        ArrayAdapter<CharSequence> ethnicityAdapter = ArrayAdapter.createFromResource(this, R.array.ethnicityList, android.R.layout.simple_spinner_item);
+        Spinner ethnicitySpinner = findViewById(R.id.GenderSpinner);
+        ArrayAdapter<CharSequence> ethnicityAdapter = ArrayAdapter.createFromResource(this, R.array.genderList, android.R.layout.simple_spinner_item);
         ethnicityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ethnicitySpinner.setAdapter(ethnicityAdapter);
         ethnicitySpinner.setOnItemSelectedListener(this);
 
-        Spinner genderSpinner = findViewById(R.id.GenderSpinner);
-        ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(this, R.array.genderList, android.R.layout.simple_spinner_item);
+        Spinner genderSpinner = findViewById(R.id.EthnicitySpinnner);
+        ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(this, R.array.ethnicityList, android.R.layout.simple_spinner_item);
         genderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         genderSpinner.setAdapter(genderAdapter);
         genderSpinner.setOnItemSelectedListener(this);
