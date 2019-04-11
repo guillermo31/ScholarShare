@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
     }
     public void openFilterScreen()
     {
-        Intent intent = new Intent(this, add.class);
+        Intent intent = new Intent(this, activity_user_input.class);
         startActivity(intent);
     }
 
