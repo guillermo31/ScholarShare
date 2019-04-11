@@ -10,6 +10,7 @@
     <string name="specifications">Specifications</string>
     <string name="enter">Enter the specifications</string>
 
+
     <string-array name="ACTScores">
         <item>1</item>
         <item>2</item>
