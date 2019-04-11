@@ -25,8 +25,6 @@ public class User
 
     }
 
-
-
 public User(double gpa, int actScore, String ethnicity, String state, String country, String gender, int age)
 {
     this.gpa = gpa;
