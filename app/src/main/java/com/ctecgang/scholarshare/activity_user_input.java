@@ -60,7 +60,9 @@ public class activity_user_input extends AppCompatActivity implements AdapterVie
 
 
         Button displayButton = (Button) findViewById(R.id.SearchButton);
-        displayButton.setOnClickListener(new View.OnClickListener(){
+        final DatabaseReference myDatabase = FirebaseDatabase.getInstance().getReference();
+        displayButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v)
             {
@@ -71,6 +73,10 @@ public class activity_user_input extends AppCompatActivity implements AdapterVie
                 String state = stateSpinner.getSelectedItem().toString();
 
                 User thisUser = new User(actScore, gender, gpa, ethnicity, state);
+
+                myDatabase.child("User info").setValue(thisUser);
+
+                openDisplayScreen();
 
             }
         });
