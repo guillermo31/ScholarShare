@@ -5,10 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+
+
 public class add extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
     private Button button;
-
+    private Scholarship newScholarship;
+    private DatabaseReference mDatabase;
+    private ArrayList<Scholarship> scholarships = new ArrayList<Scholarship>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,6 +34,22 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
         gpaSpinner.setAdapter(gpaAdapter);
         actSpinner.setOnItemSelectedListener(this);
         gpaSpinner.setOnItemSelectedListener(this);
+
+        // creating the new object with text field's data
+
+
+        button = (Button) findViewById(R.id.button3);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                newScholarship = new Scholarship();
+                mDatabase.child("scholarships").child(newScholarship.getName()).setValue(newScholarship);
+
+            }
+        });
+
     }
 
     @Override
