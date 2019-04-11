@@ -15,7 +15,24 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/EthnicitySpinner" />
+
+    <Spinner
+        android:id="@+id/EthnicitySpinner"
+        android:layout_width="261dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/GenderSpinner" />
+
+    <Spinner
+        android:id="@+id/GenderSpinner"
+        android:layout_width="261dp"
+        android:layout_height="41dp"
 
     <Spinner
         android:id="@+id/GenderSpinner"
@@ -39,11 +56,13 @@
 
     <Spinner
         android:id="@+id/GPASpinner"
-        android:layout_width="136dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_width="261dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/GenderSpinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ACTspinner" />
 
