@@ -93,7 +93,7 @@
         <item>4.0</item>
     </string-array>
 
-    <string-array name="EthnicityList">
+    <string-array name="ethnicityList">
         <item>African American</item>
         <item>Native American/Indigenous Peoples</item>
         <item>White or Caucasian></item>
@@ -104,7 +104,7 @@
         <item>Other</item>
     </string-array>
 
-    <string-array name="GenderList">
+    <string-array name="genderList">
         <item>Male</item>
         <item>Female</item>
         <item>Other</item>
