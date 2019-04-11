@@ -13,9 +13,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class activity_user_input extends AppCompatActivity {
-
-
-
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
