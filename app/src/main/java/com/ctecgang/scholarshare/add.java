@@ -14,20 +14,23 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        Spinner actSpinner = findViewById(R.id.ACTSpinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.ACTScores,
-        android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        actSpinner.setAdapter(adapter);
+        Spinner actSpinner = findViewById(R.id.ACTspinner);
+        Spinner gpaSpinner = findViewById(R.id.GPASpinner);
+        ArrayAdapter<CharSequence> actAdapter = ArrayAdapter.createFromResource(this, R.array.ACTScores, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> gpaAdapter = ArrayAdapter.createFromResource(this, R.array.GPAList, android.R.layout.simple_spinner_item);
+        actAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        gpaAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        actSpinner.setAdapter(actAdapter);
+        gpaSpinner.setAdapter(gpaAdapter);
         actSpinner.setOnItemSelectedListener(this);
-
-
+        gpaSpinner.setOnItemSelectedListener(this);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
     {
-        String text = parent.getItemAtPosition(position).toString();
+        String actScore = parent.getItemAtPosition(position).toString();
+        String gpaValue = parent.getItemAtPosition(position).toString();
 
     }
 
