@@ -111,8 +111,7 @@
         <item>Other</item>
     </string-array>
 
-<<<<<<< HEAD
-=======
+
     <string-array name="stateList">
         <item>AK</item>
         <item>AL</item>
@@ -173,6 +172,5 @@
     </string-array>
 
 
->>>>>>> 39bdd8c4d723e9b3db54a68604173c207b7922fc
 
 </resources>

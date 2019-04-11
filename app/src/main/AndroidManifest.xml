@@ -9,11 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
         <activity android:name=".Display"></activity>
-=======
         <activity android:name=".activity_user_input"></activity>
->>>>>>> 39bdd8c4d723e9b3db54a68604173c207b7922fc
         <activity android:name=".add" />
         <activity android:name=".MainActivity">
             <intent-filter>
