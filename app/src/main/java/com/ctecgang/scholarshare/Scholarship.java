@@ -28,6 +28,7 @@ public class Scholarship {
         this.gpa = gpa;
         this.ethnicity = ethnicity;
         this.state = state;
+
     }
 
     public String getName()
