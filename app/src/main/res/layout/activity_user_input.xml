@@ -30,13 +30,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
+<<<<<<< HEAD
         android:layout_marginTop="75dp"
         android:layout_marginBottom="24dp"
+=======
+        android:layout_marginTop="24dp"
+>>>>>>> master
         android:text="Ethnicity"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         android:textStyle="bold"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/GenderLabel"
+=======
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GPALabel" />
 
@@ -46,13 +53,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
+<<<<<<< HEAD
         android:layout_marginTop="75dp"
         android:layout_marginBottom="24dp"
+=======
+        android:layout_marginTop="24dp"
+>>>>>>> master
         android:text="GPA"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         android:textStyle="bold"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/EthnicityLabel"
+=======
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ACTLabel" />
 
@@ -62,13 +76,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
+<<<<<<< HEAD
         android:layout_marginTop="215dp"
         android:layout_marginBottom="24dp"
+=======
+        android:layout_marginTop="199dp"
+>>>>>>> master
         android:text="@string/act"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/GPALabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,13 +95,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
+<<<<<<< HEAD
         android:layout_marginTop="75dp"
         android:layout_marginBottom="24dp"
+=======
+        android:layout_marginTop="24dp"
+>>>>>>> master
         android:text="Gender"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="18sp"
         android:textStyle="bold"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/StateLabel"
+=======
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EthnicityLabel" />
 
@@ -111,9 +135,7 @@
         android:layout_marginTop="252dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="24dp"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toTopOf="@+id/GPADropDown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -122,23 +144,36 @@
         android:id="@+id/GPADropDown"
         android:layout_width="136dp"
         android:layout_height="28dp"
+<<<<<<< HEAD
         android:layout_marginTop="21dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/EthnicityDropDown"
+=======
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ACTDropDown" />
 
     <Spinner
         android:id="@+id/EthnicityDropDown"
         android:layout_width="136dp"
+<<<<<<< HEAD
         android:layout_height="28dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/GenderDropDown"
+=======
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GPADropDown" />
 
@@ -146,11 +181,17 @@
         android:id="@+id/GenderDropDown"
         android:layout_width="136dp"
         android:layout_height="28dp"
+<<<<<<< HEAD
         android:layout_marginTop="21dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/StateDropDown"
+=======
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EthnicityDropDown" />
 
@@ -158,11 +199,17 @@
         android:id="@+id/StateDropDown"
         android:layout_width="136dp"
         android:layout_height="28dp"
+<<<<<<< HEAD
         android:layout_marginTop="21dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="316dp"
         app:layout_constraintBottom_toBottomOf="parent"
+=======
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GenderDropDown" />
 
