@@ -3,7 +3,8 @@ package com.ctecgang.scholarshare;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class add extends AppCompatActivity {
+public class add extends AppCompatActivity
+{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
