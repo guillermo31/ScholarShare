@@ -94,5 +94,23 @@
         <item>4.0</item>
     </string-array>
 
+    <string-array name="EthnicityList">
+        <item>African American</item>
+        <item>Native American/Indigenous Peoples</item>
+        <item>White or Caucasian></item>
+        <item>Asian</item>
+        <item>Hispanic</item>
+        <item>Pacific Islander</item>
+        <item>Multiracial</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="GenderList">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
 
 </resources>
