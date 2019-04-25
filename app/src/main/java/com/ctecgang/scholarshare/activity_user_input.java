@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class activity_user_input extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
-    
+    public User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -74,9 +74,7 @@ public class activity_user_input extends AppCompatActivity implements AdapterVie
                 String state = stateSpinner.getSelectedItem().toString();
                 String name = userName.getText().toString();
 
-                User thisUser = new User(name, actScore, gender, gpa, ethnicity, state);
-
-                myDatabase.child("Users").child(name).setValue(thisUser);
+                currentUser = new User(name, actScore, gender, gpa, ethnicity, state);
 
                 openDisplayScreen();
 
