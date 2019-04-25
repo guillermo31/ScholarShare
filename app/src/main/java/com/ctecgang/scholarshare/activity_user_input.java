@@ -57,6 +57,7 @@ public class activity_user_input extends AppCompatActivity implements AdapterVie
         stateSpinner.setAdapter(stateAdapter);
         stateSpinner.setOnItemSelectedListener(this);
 
+        final EditText userName = findViewById(R.id.userName);
 
 
         Button displayButton = (Button) findViewById(R.id.SearchButton);
@@ -71,10 +72,11 @@ public class activity_user_input extends AppCompatActivity implements AdapterVie
                 String ethnicity = ethnicitySpinner.getSelectedItem().toString();
                 String gender = genderSpinner.getSelectedItem().toString();
                 String state = stateSpinner.getSelectedItem().toString();
+                String name = userName.getText().toString();
 
-                User thisUser = new User(actScore, gender, gpa, ethnicity, state);
+                User thisUser = new User(name, actScore, gender, gpa, ethnicity, state);
 
-                myDatabase.child("User info").setValue(thisUser);
+                myDatabase.child("Users").child(name).setValue(thisUser);
 
                 openDisplayScreen();
 

@@ -84,7 +84,7 @@ public class add extends AppCompatActivity implements AdapterView.OnItemSelected
 
                 newScholarship = new Scholarship(nameField, actScore, gender, gpa, ethnicity, state, linkField);
 
-                mDatabase.child("scholarships").child(newScholarship.getName()).setValue(newScholarship);
+                mDatabase.child("Scholarships").child(newScholarship.getName()).setValue(newScholarship);
 
             }
         });
