@@ -20,17 +20,47 @@ import java.util.List;
 
 public class Display extends AppCompatActivity {
 
+    private DatabaseReference scholarshipRef;
     private DatabaseReference userRef;
     private ListView listView;
     private ArrayList<Scholarship> scholarships = new ArrayList<Scholarship>();
+    private ArrayList<User> users = new ArrayList<User>();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
-        userRef = FirebaseDatabase.getInstance().getReference("Scholarships");
+        scholarshipRef = FirebaseDatabase.getInstance().getReference("Scholarships");
+        userRef = FirebaseDatabase.getInstance().getReference("Users");
 
         userRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                User value = dataSnapshot.getValue(User.class);
+                users.add(value);
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        scholarshipRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Scholarship value = dataSnapshot.getValue(Scholarship.class);
