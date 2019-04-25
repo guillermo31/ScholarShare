@@ -1,10 +1,14 @@
 package com.ctecgang.scholarshare;
 
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -12,35 +16,45 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Display extends AppCompatActivity {
 
-    private RecyclerView mRecyclerView;
-
+    private DatabaseReference userRef;
+    private ListView listView;
+    private ArrayList<Scholarship> scholarships = new ArrayList<Scholarship>();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_scholarships);
-        new FirebaseDatabaseHelper().readScholarships(new FirebaseDatabaseHelper.DataStatus() {
-            @Override
-            public void dataIsLoaded(ArrayList<Scholarship> scholarships, ArrayList<String> keys) {
-                new RecyclerView_Config().setConfig(mRecyclerView, Display.this, scholarships, keys);
-            }
+        userRef = FirebaseDatabase.getInstance().getReference("Scholarships");
 
+        userRef.addChildEventListener(new ChildEventListener() {
             @Override
-            public void dataIsInserted() {
-
-            }
-
-            @Override
-            public void dataIsUpdated() {
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                Scholarship value = dataSnapshot.getValue(Scholarship.class);
+                scholarships.add(value);
 
             }
 
             @Override
-            public void dataIsDeleted() {
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
